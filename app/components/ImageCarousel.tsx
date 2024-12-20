@@ -49,7 +49,7 @@ export const ImageCarousel = ({ images }: ImageCarouselProps) => {
             key={i}
             className="flex-none transform transition-all duration-300 hover:scale-105 hover:-translate-y-2"
           >
-            <div className="bg-white rounded-lg md:rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div className="bg-white rounded-lg md:rounded-xl shadow-2xl transition-shadow duration-300">
               <img
                 src={src}
                 alt=""
