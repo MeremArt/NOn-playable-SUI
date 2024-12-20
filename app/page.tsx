@@ -62,6 +62,10 @@ export default function Page() {
           </a>
 
           <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("links");
+            }}
             href="#links"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
@@ -81,6 +85,10 @@ export default function Page() {
             JOIN
           </a>
           <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("how-to-buy");
+            }}
             href="#how-to-buy"
             className="hover:opacity-80 font-bold font-fredoka text-xl "
           >
@@ -153,7 +161,10 @@ export default function Page() {
         </div>
 
         {/* Social Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24 mb-12  max-w-[1440px] py-4 md:py-8mx-auto  px-4 md:px-6 lg:px-8">
+        <div
+          id="links"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24 mb-12  max-w-[1440px] py-4 md:py-8mx-auto  px-4 md:px-6 lg:px-8"
+        >
           {[
             {
               text: "TELEGRAM",
@@ -216,7 +227,10 @@ export default function Page() {
         </div>
 
         {/* How to Buy Section */}
-        <div className="flex justify-center w-full px-4 mb-12 md:mb-20">
+        <div
+          id="how-to-buy"
+          className="flex justify-center w-full px-4 mb-12 md:mb-20"
+        >
           <div className="flex w-full md:w-[1200px] bg-white rounded-[25px] md:rounded-[50px] p-6 md:p-14 relative justify-center items-center shadow-2xl mx-auto">
             {/* Inner border div */}
             <div className="absolute inset-4 border-2 border-[#53B0FF] rounded-[25px] md:rounded-[50px]" />
@@ -225,22 +239,22 @@ export default function Page() {
             <div className="flex flex-col md:flex-row w-full justify-between items-center relative z-10 px-4 md:px-8 gap-8">
               <div className="w-full md:w-1/2">
                 <div className="flex-row justify-center items-start">
-                  <h2 className="text-[#212121] font-montserrat font-bold text-4xl md:text-[66px] leading-tight md:leading-[72px] mb-6 md:mb-10">
+                  <h2 className="text-[#212121] font-fredoka font-bold text-4xl md:text-[66px] leading-tight md:leading-[72px] mb-6 md:mb-10">
                     HOW TO BUY
                   </h2>
                   <div className="space-y-4 md:space-y-6">
                     <div>
-                      <h3 className="text-[#53B0FF] font-bold text-xl md:text-2xl leading-tight md:leading-[34px] mb-2 md:mb-3">
+                      <h3 className="text-[#53B0FF] font-fredoka font-bold text-xl md:text-2xl leading-tight md:leading-[34px] mb-2 md:mb-3">
                         SET UP YOUR WALLET
                       </h3>
-                      <p className="text-[#212121] font-semibold text-lg md:text-xl leading-tight md:leading-[30px]">
+                      <p className="text-[#212121] font-fredoka font-semibold text-lg md:text-xl leading-tight md:leading-[30px]">
                         Download the SUIS wallet and create wallet
                       </p>
                     </div>
-                    <h3 className="text-[#53B0FF] font-bold text-xl md:text-2xl leading-tight md:leading-[34px]">
+                    <h3 className="text-[#53B0FF] font-fredoka font-bold text-xl md:text-2xl leading-tight md:leading-[34px]">
                       GET SOME SUI
                     </h3>
-                    <h3 className="text-[#53B0FF] font-bold text-xl md:text-2xl leading-tight md:leading-[34px]">
+                    <h3 className="text-[#53B0FF] font-fredoka font-bold text-xl md:text-2xl leading-tight md:leading-[34px]">
                       CONVERT SUI TO NPS
                     </h3>
                   </div>
@@ -264,7 +278,7 @@ export default function Page() {
         <div className="mb-16 md:mb-32 relative">
           <div className=" transform -rotate-[3deg]">
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
-            <TextCarousel text="$Non-playable Suis" />
+            <TextCarousel text="$NON-PLAYABLE SUIS" />
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
           </div>
         </div>
@@ -275,7 +289,7 @@ export default function Page() {
           className="bg-white py-4 md:py-5 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 mt-16 md:mt-32"
         >
           <img
-            src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693154/web3_edjekd.png"
+            src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734725124/WhatsApp_Image_2024-12-18_at_20.54.03_3_1_wv4kjt.png"
             alt="Logo"
             className="w-[48px] h-[64px] md:w-[58px] md:h-[74px]"
           />
