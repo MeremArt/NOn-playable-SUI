@@ -73,7 +73,11 @@ export default function Page() {
           </a>
 
           <a
-            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("style");
+            }}
+            href="#style"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
             $NPS-STYLE
@@ -215,7 +219,10 @@ export default function Page() {
         </div>
 
         {/* Description */}
-        <p className="text-white font-fredoka font-semibold text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[937px] mx-auto mb-12 px-4">
+        <p
+          id="style"
+          className="text-white font-fredoka font-semibold text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[937px] mx-auto mb-12 px-4"
+        >
           $NPS is world-famous and on the road a lot. Take a look at our media
           section and get a feel for his lifestyle. From brokie to
           multi-millionaire thanks to SUI-CHAIN!
