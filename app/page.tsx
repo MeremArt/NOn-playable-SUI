@@ -1,9 +1,22 @@
 "use client";
 import { TextCarousel } from "./components/TextCarousel";
+import { useState } from "react";
 import { ImageCarousel } from "./components/ImageCarousel";
 import Image from "next/image";
 
 export default function Page() {
+  const [copied, setCopied] = useState(false);
+  const address = "0xd9773016f31a1216fb0a1e0b0937fc";
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(address);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
   const images = [
     "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693155/wbe33_czxjyc.png",
     "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693157/web333_lxmprn.png",
@@ -15,68 +28,106 @@ export default function Page() {
 
   return (
     <main className="w-full min-h-screen bg-[#53B0FF] overflow-x-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8 py-4 md:py-8">
+      {/* Navigation */}
+      <nav className=" px-6 md:px-20 flex items-center justify-between text-black">
+        <div className="flex items-center">
+          <Image
+            src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734725124/WhatsApp_Image_2024-12-18_at_20.54.03_3_1_wv4kjt.png"
+            alt="Logo"
+            width={58}
+            height={94}
+            className="w-[48px] h-[74px] md:w-[58px] md:h-[74px]"
+          />
+        </div>
+
+        <div className="flex items-center gap-5 md:gap-8">
+          <a href="#home" className="hover:opacity-80 font-bold font-fredoka ">
+            HOME
+          </a>
+
+          <a href="#links" className="hover:opacity-80 font-bold font-fredoka ">
+            LINKS
+          </a>
+
+          <a
+            href="#suijak"
+            className="hover:opacity-80 font-bold font-fredoka "
+          >
+            SUIJAK-STYLE
+          </a>
+          <a href="#join" className="hover:opacity-80 font-bold font-fredoka ">
+            JOIN
+          </a>
+          <a
+            href="#how-to-buy"
+            className="hover:opacity-80 font-bold font-fredoka "
+          >
+            HOW TO BUY
+          </a>
+          <a
+            href="#footer"
+            className="hover:opacity-80 font-black
+             font-fredoka "
+          >
+            FOOTER
+          </a>
+        </div>
+      </nav>
+      <div className="h-1 md:h-[2px] bg-[#333333] w-full" />
+
+      <div className="mt-10">
         {/* Header Section */}
         <div className="flex flex-col items-center mb-8 md:mb-12">
-          <h1 className="text-white font-montserrat font-bold text-3xl md:text-[56px] leading-tight md:leading-[72px] mb-4 text-center">
-            Non-playable Suis
+          <h1 className="text-white font-fredoka font-extrabold text-3xl md:text-[56px] leading-tight md:leading-[72px] mb-4 text-center drop-shadow-lg">
+            NON-PLAYABLE SUIS
           </h1>
           <p className="text-white font-montserrat font-medium text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[886px] px-4">
             A new era starts with legendary Wojack on Sui called Non-playable
             Suis.
           </p>
         </div>
+        <center className="mb-10">
+          <button className="flex justify-center items-center bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all ">
+            GET STARTED
+          </button>
+        </center>
 
         {/* Copy Section */}
-        <div className="flex flex-col md:flex-row gap-4 mb-8 md:mb-12 justify-center items-center">
-          <div className="bg-white p-3 md:p-4 flex items-center rounded w-full md:w-auto">
-            <span className="font-montserrat font-medium text-base md:text-2xl leading-tight md:leading-[38.4px] break-all md:break-normal">
-              Bxd90083016f31a1216fx0a1v0::
-            </span>
+        <center className="mb-10">
+          <div className="flex w-[440px] items-center gap-2 bg-white rounded-full px-4 py-2">
+            <span className="text-black font-mono">{address}</span>
+            <button
+              onClick={handleCopy}
+              className="bg-black text-white px-4 py-1 rounded-full hover:bg-opacity-80 transition-all"
+            >
+              {copied ? "Copied!" : "Copy"}
+            </button>
           </div>
-          <button
-            className="bg-[#4EA1FF] text-white px-4 py-2 rounded flex items-center gap-2 w-full md:w-auto justify-center"
-            onClick={() =>
-              navigator.clipboard.writeText("Bxd90083016f31a1216fx0a1v0::")
-            }
-          >
-            <span className="sr-only">Copy address</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2z"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-              <path
-                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-            </svg>
-            <span className="font-montserrat font-medium text-lg md:text-2xl leading-tight md:leading-[38.4px]">
-              COPY
-            </span>
-          </button>
-        </div>
+        </center>
 
-        <div className="mb-12 md:mb-20 mt-16 md:mt-32 relative">
-          <div className="border-4 md:border-8 border-[#327ACC] relative">
-            <TextCarousel text="$Non-playable Suis" />
-            {/* Image positioned on top border */}
-            <div className="hidden md:block absolute -top-[358px] left-[1010px]">
-              <Image
-                src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734701445/WhatsApp_Image_2024-12-18_at_20.54.04_2_feschi.png"
-                width={400}
-                height={400}
-                alt="Decorative image"
-                className="object-contain"
-              />
-            </div>
+        <div className="relative mb-10">
+          {/* Top line */}
+          <div className="h-1 md:h-2 bg-[#333333] w-full" />
+
+          <TextCarousel text="$Non-playable Suis" />
+
+          {/* Bottom line */}
+          <div className="h-28 md:h-2 bg-[#333333] w-full" />
+
+          {/* Image positioned on top */}
+          <div className="hidden md:block absolute -top-[240px] left-[1200px]">
+            <Image
+              src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734701445/WhatsApp_Image_2024-12-18_at_20.54.04_2_feschi.png"
+              width={400}
+              height={400}
+              alt="Decorative image"
+              className="object-contain"
+            />
           </div>
         </div>
 
         {/* Social Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24 mb-12  max-w-[1440px] py-4 md:py-8mx-auto  px-4 md:px-6 lg:px-8">
           {[
             {
               text: "TELEGRAM",
@@ -185,8 +236,10 @@ export default function Page() {
 
         {/* Text Carousel Banner */}
         <div className="mb-16 md:mb-32 relative">
-          <div className="border-4 md:border-8 border-[#327ACC] transform -rotate-[12deg]">
+          <div className=" transform -rotate-[3deg]">
+            <div className="h-1 md:h-2 bg-[#327ACC] w-full" />
             <TextCarousel text="$Non-playable Suis" />
+            <div className="h-1 md:h-2 bg-[#327ACC] w-full" />
           </div>
         </div>
 

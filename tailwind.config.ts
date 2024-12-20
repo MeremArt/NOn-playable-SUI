@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fredoka: ["var(--font-fredoka)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

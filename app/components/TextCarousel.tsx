@@ -43,15 +43,19 @@ export const TextCarousel = ({ text }: TextCarouselProps) => {
         className="flex gap-6 md:gap-10 transition-transform duration-500 ease-linear will-change-transform"
         style={{ transform: `translateX(${position}%)` }}
       >
-        {[...Array(6)].map((_, i) => (
-          <span
-            key={i}
-            className="flex-none text-white font-montserrat font-bold text-2xl md:text-[56px] leading-normal md:leading-[72px]"
-          >
-            {text}
-          </span>
-        ))}
+        <div className="flex bg-[#53B0FF]">
+          {[...Array(6)].map((_, i) => (
+            <span
+              key={i}
+              className="flex-none text-white  font-fredoka  font-bold text-3xl md:text-[56px] leading-normal md:leading-[72px] px-4 py-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]"
+            >
+              {text}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
+
+export default TextCarousel;
