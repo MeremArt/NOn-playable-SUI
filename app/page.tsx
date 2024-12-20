@@ -73,7 +73,7 @@ export default function Page() {
           </a>
 
           <a
-            href="#suijak"
+            href="#home"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
             $NPS-STYLE
@@ -116,12 +116,12 @@ export default function Page() {
             NON-PLAYABLE SUIS
           </h1>
           <p className="text-white font-montserrat font-medium text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[886px] px-4">
-            A new era starts with legendary Wojack on Sui called Non-playable
-            Suis.
+            A new era starts with legendary Wojack on Sui called
+            <span className="font-fredoka font-bold"> Non-playable Suis.</span>
           </p>
         </div>
         <center className="mb-10">
-          <button className="flex justify-center items-center bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all drop-shadow-lg ">
+          <button className="flex justify-center font-fredoka items-center bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all drop-shadow-lg ">
             GET STARTED
           </button>
         </center>
@@ -207,7 +207,7 @@ export default function Page() {
                   className="object-cover w-full h-full"
                 />
               </div>
-              <span className="font-montserrat font-semibold text-xl md:text-2xl leading-tight md:leading-[38.4px] text-[#212121]">
+              <span className="font-fredoka font-semibold text-xl md:text-2xl leading-tight md:leading-[38.4px] text-[#212121]">
                 {item.text}
               </span>
             </div>
@@ -215,7 +215,7 @@ export default function Page() {
         </div>
 
         {/* Description */}
-        <p className="text-white font-semibold text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[937px] mx-auto mb-12 px-4">
+        <p className="text-white font-fredoka font-semibold text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[937px] mx-auto mb-12 px-4">
           $NPS is world-famous and on the road a lot. Take a look at our media
           section and get a feel for his lifestyle. From brokie to
           multi-millionaire thanks to SUI-CHAIN!
