@@ -25,6 +25,15 @@ export default function Page() {
     "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734696064/upsui_yiigfr.png",
     "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693155/wbe33_czxjyc.png",
   ];
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <main className="w-full min-h-screen bg-[#53B0FF] overflow-x-hidden">
@@ -42,6 +51,10 @@ export default function Page() {
 
         <div className="flex items-center gap-5 md:gap-8">
           <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("home");
+            }}
             href="#home"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
@@ -74,6 +87,10 @@ export default function Page() {
             HOW TO BUY
           </a>
           <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("footer");
+            }}
             href="#footer"
             className="hover:opacity-80 font-black text-xl
              font-fredoka "
@@ -194,7 +211,7 @@ export default function Page() {
         </p>
 
         {/* Image Carousel */}
-        <div className="mb-12">
+        <div className="mb-20">
           <ImageCarousel images={images} />
         </div>
 
@@ -246,14 +263,17 @@ export default function Page() {
         {/* Text Carousel Banner */}
         <div className="mb-16 md:mb-32 relative">
           <div className=" transform -rotate-[3deg]">
-            <div className="h-1 md:h-2 bg-[#327ACC] w-full" />
+            <div className="h-1 md:h-2 bg-[#333333]  w-full" />
             <TextCarousel text="$Non-playable Suis" />
-            <div className="h-1 md:h-2 bg-[#327ACC] w-full" />
+            <div className="h-1 md:h-2 bg-[#333333]  w-full" />
           </div>
         </div>
 
         {/* Footer */}
-        <footer className="bg-white py-4 md:py-5 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 mt-16 md:mt-32">
+        <footer
+          id="footer"
+          className="bg-white py-4 md:py-5 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 mt-16 md:mt-32"
+        >
           <img
             src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693154/web3_edjekd.png"
             alt="Logo"
