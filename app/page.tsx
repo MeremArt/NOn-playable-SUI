@@ -41,32 +41,41 @@ export default function Page() {
         </div>
 
         <div className="flex items-center gap-5 md:gap-8">
-          <a href="#home" className="hover:opacity-80 font-bold font-fredoka ">
+          <a
+            href="#home"
+            className="hover:opacity-80 font-bold font-fredoka text-xl"
+          >
             HOME
           </a>
 
-          <a href="#links" className="hover:opacity-80 font-bold font-fredoka ">
+          <a
+            href="#links"
+            className="hover:opacity-80 font-bold font-fredoka text-xl"
+          >
             LINKS
           </a>
 
           <a
             href="#suijak"
-            className="hover:opacity-80 font-bold font-fredoka "
+            className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
-            SUIJAK-STYLE
+            $NPS-STYLE
           </a>
-          <a href="#join" className="hover:opacity-80 font-bold font-fredoka ">
+          <a
+            href="#join"
+            className="hover:opacity-80 font-bold font-fredoka text-xl"
+          >
             JOIN
           </a>
           <a
             href="#how-to-buy"
-            className="hover:opacity-80 font-bold font-fredoka "
+            className="hover:opacity-80 font-bold font-fredoka text-xl "
           >
             HOW TO BUY
           </a>
           <a
             href="#footer"
-            className="hover:opacity-80 font-black
+            className="hover:opacity-80 font-black text-xl
              font-fredoka "
           >
             FOOTER
@@ -87,7 +96,7 @@ export default function Page() {
           </p>
         </div>
         <center className="mb-10">
-          <button className="flex justify-center items-center bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all ">
+          <button className="flex justify-center items-center bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all drop-shadow-lg ">
             GET STARTED
           </button>
         </center>
@@ -109,7 +118,7 @@ export default function Page() {
           {/* Top line */}
           <div className="h-1 md:h-2 bg-[#333333] w-full" />
 
-          <TextCarousel text="$Non-playable Suis" />
+          <TextCarousel text="$NON-PLAYABLE SUIS" />
 
           {/* Bottom line */}
           <div className="h-28 md:h-2 bg-[#333333] w-full" />
@@ -159,7 +168,7 @@ export default function Page() {
               <div
                 className="w-32 h-32 md:w-[164px] md:h-[164px] rounded-full mb-6 md:mb-10 overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-105"
                 style={{
-                  border: `1px solid ${item.color}`,
+                  border: `5px solid ${item.color}`,
                 }}
               >
                 <Image
