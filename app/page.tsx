@@ -80,7 +80,7 @@ export default function Page() {
             href="#style"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
-            $NPSUI i-STYLE
+            $NPSUI
           </a>
           <a
             href="#join"
@@ -116,8 +116,8 @@ export default function Page() {
       <div className="mt-10">
         {/* Header Section */}
         <div className="flex flex-col items-center mb-8 md:mb-12">
-          <h1 className="text-white font-fredoka font-extrabold text-3xl md:text-[56px] leading-tight md:leading-[72px] mb-4 text-center drop-shadow-lg">
-            NON-PLAYABLE SUIS
+          <h1 className="text-white font-fredoka font-extrabold text-4xl md:text-[56px] leading-tight md:leading-[72px] mb-4 text-center drop-shadow-lg">
+            NPSUIS
           </h1>
           <p className="text-white font-montserrat font-medium text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[886px] px-4">
             NPC&apos;s are bridging from Sol to Sui and becoming{" "}
@@ -152,7 +152,7 @@ export default function Page() {
           <TextCarousel text="$NPSUIS" />
 
           {/* Bottom line */}
-          <div className="h-28 md:h-2 bg-[#333333] w-full" />
+          <div className="h-2 md:h-2 bg-[#333333] w-full" />
 
           {/* Image positioned on top */}
           <div className="hidden md:block absolute -top-[240px] left-[1200px]">
