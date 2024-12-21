@@ -80,7 +80,7 @@ export default function Page() {
             href="#style"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
-            $NPS-STYLE
+            $NPSUI i-STYLE
           </a>
           <a
             href="#join"
@@ -120,8 +120,10 @@ export default function Page() {
             NON-PLAYABLE SUIS
           </h1>
           <p className="text-white font-montserrat font-medium text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[886px] px-4">
-            A new era starts with legendary Wojack on Sui called
-            <span className="font-fredoka font-bold"> Non-playable Suis.</span>
+            NPC&apos;s are bridging from Sol to Sui and becoming{" "}
+            <span className="font-fredoka font-bold"> NPSUIS</span> Degen&apos;s
+            unite. This is no pump and dump, this is the next greatest meme coin
+            on the market
           </p>
         </div>
         <center className="mb-10">
@@ -223,7 +225,7 @@ export default function Page() {
           id="style"
           className="text-white font-fredoka font-semibold text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[937px] mx-auto mb-12 px-4"
         >
-          $NPS is world-famous and on the road a lot. Take a look at our media
+          $NPSUI is world-famous and on the road a lot. Take a look at our media
           section and get a feel for his lifestyle. From brokie to
           multi-millionaire thanks to SUI-CHAIN!
         </p>
@@ -262,7 +264,7 @@ export default function Page() {
                       GET SOME SUI
                     </h3>
                     <h3 className="text-[#53B0FF] font-fredoka font-bold text-xl md:text-2xl leading-tight md:leading-[34px]">
-                      CONVERT SUI TO NPS
+                      CONVERT SUI TO $NPSUI
                     </h3>
                   </div>
                 </div>
@@ -302,7 +304,7 @@ export default function Page() {
           />
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
             <span className="text-[#53B0FF] font-medium text-sm md:text-base leading-5 text-center md:text-left">
-              © 2024, NPS | All Rights Reserved
+              © 2024, NPSUI | All Rights Reserved
             </span>
             <div className="flex gap-4">
               {["twitter", "instagram", "linkedin"].map((social) => (
