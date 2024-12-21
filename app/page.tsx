@@ -121,9 +121,9 @@ export default function Page() {
           </h1>
           <p className="text-white font-montserrat font-medium text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[886px] px-4">
             NPC&apos;s are bridging from Sol to Sui and becoming{" "}
-            <span className="font-fredoka font-bold"> NPSUIS</span> Degen&apos;s
-            unite. This is no pump and dump, this is the next greatest meme coin
-            on the market
+            <span className="font-fredoka font-bold"> $NPSUIS</span>{" "}
+            Degen&apos;s unite. This is no pump and dump, this is the next
+            greatest meme coin on the market
           </p>
         </div>
         <center className="mb-10">
