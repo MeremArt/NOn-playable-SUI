@@ -149,7 +149,7 @@ export default function Page() {
           {/* Top line */}
           <div className="h-1 md:h-2 bg-[#333333] w-full" />
 
-          <TextCarousel text="$NON-PLAYABLE SUIS" />
+          <TextCarousel text="$NPSUIS" />
 
           {/* Bottom line */}
           <div className="h-28 md:h-2 bg-[#333333] w-full" />
@@ -287,7 +287,7 @@ export default function Page() {
         <div className="mb-16 md:mb-32 relative">
           <div className=" transform -rotate-[3deg]">
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
-            <TextCarousel text="$NON-PLAYABLE SUIS" />
+            <TextCarousel text="$NPSUIS" />
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
           </div>
         </div>
