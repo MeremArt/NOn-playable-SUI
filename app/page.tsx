@@ -82,12 +82,12 @@ export default function Page() {
           >
             $NPSUI
           </a>
-          <a
+          {/* <a
             href="#join"
             className="hover:opacity-80 font-bold font-fredoka text-xl"
           >
             JOIN
-          </a>
+          </a> */}
           <a
             onClick={(e) => {
               e.preventDefault();
