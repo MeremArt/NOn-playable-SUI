@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { TextCarousel } from "./components/TextCarousel";
 import { useState } from "react";
+import Navigation from "./components/Navigation";
 import { ImageCarousel } from "./components/ImageCarousel";
 import Image from "next/image";
 
@@ -37,80 +39,9 @@ export default function Page() {
 
   return (
     <main className="w-full min-h-screen bg-[#53B0FF] overflow-x-hidden">
+      <Navigation scrollToSection={scrollToSection} />
       {/* Navigation */}
-      <nav className=" px-6 md:px-20 flex items-center justify-between text-black">
-        <div className="flex items-center">
-          <Image
-            src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734725124/WhatsApp_Image_2024-12-18_at_20.54.03_3_1_wv4kjt.png"
-            alt="Logo"
-            width={58}
-            height={94}
-            className="w-[48px] h-[74px] md:w-[58px] md:h-[74px]"
-          />
-        </div>
 
-        <div className="flex items-center gap-5 md:gap-8">
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("home");
-            }}
-            href="#home"
-            className="hover:opacity-80 font-bold font-fredoka text-xl"
-          >
-            HOME
-          </a>
-
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("links");
-            }}
-            href="#links"
-            className="hover:opacity-80 font-bold font-fredoka text-xl"
-          >
-            LINKS
-          </a>
-
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("style");
-            }}
-            href="#style"
-            className="hover:opacity-80 font-bold font-fredoka text-xl"
-          >
-            $NPSUI
-          </a>
-          {/* <a
-            href="#join"
-            className="hover:opacity-80 font-bold font-fredoka text-xl"
-          >
-            JOIN
-          </a> */}
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("how-to-buy");
-            }}
-            href="#how-to-buy"
-            className="hover:opacity-80 font-bold font-fredoka text-xl "
-          >
-            HOW TO BUY
-          </a>
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("footer");
-            }}
-            href="#footer"
-            className="hover:opacity-80 font-black text-xl
-             font-fredoka "
-          >
-            FOOTER
-          </a>
-        </div>
-      </nav>
       <div className="h-1 md:h-[2px] bg-[#333333] w-full" />
 
       <div className="mt-10">
