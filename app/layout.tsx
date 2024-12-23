@@ -10,10 +10,32 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "Non-playable Suis",
-  description: "A new era starts with legendary Wojack on Sui",
+  title: "NPSUIS",
+  description:
+    "NPC's are bridging from Sol to Sui and becoming NPSUIS. Degen's unite. This is no pump and dump, this is the next greatest meme coin on the market",
+  openGraph: {
+    images: [
+      {
+        url: "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693154/web3_edjekd.png",
+        width: 1200,
+        height: 630,
+        alt: "NPSUIS Logo",
+      },
+    ],
+  },
+  twitter: {
+    title: "Chimera",
+    description:
+      "NPC's are bridging from Sol to Sui and becoming NPSUIS. Degen's unite. This is no pump and dump, this is the next greatest meme coin on the market",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693154/web3_edjekd.png",
+        alt: "NPSUIS Logo",
+      },
+    ],
+    creator: "",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
