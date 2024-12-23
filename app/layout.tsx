@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Chimera",
+    title: "NPSUIS",
     description:
       "NPC's are bridging from Sol to Sui and becoming NPSUIS. Degen's unite. This is no pump and dump, this is the next greatest meme coin on the market",
     images: [
