@@ -41,7 +41,7 @@ export default function Page() {
     <main className="w-full min-h-screen bg-[#53B0FF] overflow-x-hidden">
       <Navigation scrollToSection={scrollToSection} />
       {/* Navigation */}
-
+      {/* https://t.me/nonplayablesuisportal */}
       <div className="h-1 md:h-[2px] bg-[#333333] w-full" />
 
       <div className="mt-10">
@@ -107,7 +107,7 @@ export default function Page() {
               text: "TELEGRAM",
               color: "#4EA1FF",
               image: "/v1734693156/wbe333_oz7sew.png",
-              url: "https://t.me/yourTelegramGroup",
+              url: "https://t.me/nonplayablesuisportal",
             },
             {
               text: "BUY",
@@ -119,7 +119,7 @@ export default function Page() {
               text: "TWITTER",
               color: "#A1FF4E",
               image: "/v1734693157/web333_lxmprn.png",
-              url: "https://twitter.com/yourTwitterHandle",
+              url: " https://x.com/NonPlayableSui",
             },
           ].map((item) => (
             <div
