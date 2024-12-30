@@ -8,7 +8,8 @@ import Image from "next/image";
 
 export default function Page() {
   const [copied, setCopied] = useState(false);
-  const address = "0xd9773016f31a1216fb0a1e0b0937fc";
+  const address =
+    "0x9fad05ab47e6fc9885fd1904317ed0b158691b8494d010604bbc977af19ff0e5::npsui::NPSUI";
 
   const handleCopy = async () => {
     try {
