@@ -8,18 +8,22 @@ import Image from "next/image";
 
 export default function Page() {
   const [copied, setCopied] = useState(false);
-  const address =
+  const fullAddress =
     "0x9fad05ab47e6fc9885fd1904317ed0b158691b8494d010604bbc977af19ff0e5::npsui::NPSUI";
+  const shortAddress = `${fullAddress.slice(0, 12)}...${fullAddress.slice(
+    -10
+  )}`;
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(address);
+      await navigator.clipboard.writeText(fullAddress);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error("Failed to copy:", err);
     }
   };
+
   const images = [
     "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693155/wbe33_czxjyc.png",
     "https://res.cloudinary.com/dtfvdjvyr/image/upload/v1734693157/web333_lxmprn.png",
