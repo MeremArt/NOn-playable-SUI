@@ -48,13 +48,13 @@ export default function Page() {
         {/* Header Section */}
         <div className="flex flex-col items-center mb-8 md:mb-12">
           <h1 className="text-white font-fredoka font-extrabold text-4xl md:text-[56px] leading-tight md:leading-[72px] mb-4 text-center drop-shadow-lg">
-            NPSUIS
+            NPSUI
           </h1>
           <p className="text-white font-montserrat font-medium text-lg md:text-2xl leading-relaxed md:leading-[38.4px] text-center max-w-[886px] px-4">
             NPC&apos;s are bridging from Sol to Sui and becoming{" "}
-            <span className="font-fredoka font-bold"> $NPSUIS</span>{" "}
-            Degen&apos;s unite. This is no pump and dump, this is the next
-            greatest meme coin on the market
+            <span className="font-fredoka font-bold"> $NPSUI</span> Degen&apos;s
+            unite. This is no pump and dump, this is the next greatest meme coin
+            on the market
           </p>
         </div>
         <center className="mb-10">
@@ -80,7 +80,7 @@ export default function Page() {
           {/* Top line */}
           <div className="h-1 md:h-2 bg-[#333333] w-full" />
 
-          <TextCarousel text="$NPSUIS" />
+          <TextCarousel text="$NPSUI" />
 
           {/* Bottom line */}
           <div className="h-2 md:h-2 bg-[#333333] w-full" />
@@ -218,7 +218,7 @@ export default function Page() {
         <div className="mb-16 md:mb-32 relative">
           <div className=" transform -rotate-[3deg]">
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
-            <TextCarousel text="$NPSUIS" />
+            <TextCarousel text="$NPSUI" />
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
           </div>
         </div>
