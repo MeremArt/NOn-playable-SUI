@@ -107,7 +107,7 @@ export default function Page() {
               text: "TELEGRAM",
               color: "#4EA1FF",
               image: "/v1734693156/wbe333_oz7sew.png",
-              url: "https://t.me/nonplayablesuisportal",
+              url: "https://t.me/nonplayablesuis",
             },
             {
               text: "BUY",
