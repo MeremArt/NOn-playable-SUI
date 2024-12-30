@@ -10,7 +10,7 @@ export default function Page() {
   const [copied, setCopied] = useState(false);
   const fullAddress =
     "0x9fad05ab47e6fc9885fd1904317ed0b158691b8494d010604bbc977af19ff0e5::npsui::NPSUI";
-  const shortAddress = `${fullAddress.slice(0, 12)}...${fullAddress.slice(
+  const shortAddress = `${fullAddress.slice(0, 21)}...${fullAddress.slice(
     -10
   )}`;
 
