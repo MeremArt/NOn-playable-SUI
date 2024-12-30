@@ -71,7 +71,7 @@ export default function Page() {
         {/* Copy Section */}
         <center className="mb-10">
           <div className="flex w-[440px] items-center gap-2 bg-white rounded-full px-4 py-2">
-            <span className="text-black font-mono">{address}</span>
+            <span className="text-black font-mono">{shortAddress}</span>
             <button
               onClick={handleCopy}
               className="bg-black text-white px-4 py-1 rounded-full hover:bg-opacity-80 transition-all"
