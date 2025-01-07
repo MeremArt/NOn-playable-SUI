@@ -3,6 +3,7 @@
 import { TextCarousel } from "./components/TextCarousel";
 import { useState } from "react";
 import Navigation from "./components/Navigation";
+import Link from "next/link";
 import { ImageCarousel } from "./components/ImageCarousel";
 import Image from "next/image";
 
@@ -227,6 +228,23 @@ export default function Page() {
             <div className="h-1 md:h-2 bg-[#333333]  w-full" />
           </div>
         </div>
+        <a href="https://raidenx.io/sui/bluemove-npsui-sui-232446">
+          <div className="flex w-full md:w-[1200px] bg-white rounded-[25px] md:rounded-[50px] p-6 md:p-14 relative justify-center items-center shadow-2xl mx-auto transition-transform transform hover:scale-105 hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)] hover:bg-[#F0F8FF]">
+            {/* Inner border div */}
+            <div className="absolute inset-4 border-2 border-[#53B0FF] rounded-[25px] md:rounded-[50px] transition-all duration-300 hover:border-[#1A73E8]" />
+
+            {/* Content container */}
+            <div className="w-full flex items-center justify-center">
+              <Image
+                src="https://res.cloudinary.com/dtfvdjvyr/image/upload/v1736254271/Full_-_Color_ygok9x.png"
+                width={500}
+                height={500}
+                alt="Chil guy"
+                className="object-contain w-full md:w-auto"
+              />
+            </div>
+          </div>
+        </a>
 
         {/* Footer */}
         <footer
